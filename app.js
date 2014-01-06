@@ -2,9 +2,9 @@
 var express = require('express')
 ,  http = require('http')
 ,  path = require('path')
-,  app = express();
+,  app = express()
 ,  MtGoxClient = require("./mtgox")
-,	client = new MtGoxClient(process.env.MTGOX_KEY, process.env.MTGOX_SECRET);
+,	 client = new MtGoxClient(process.env.MTGOX_KEY, process.env.MTGOX_SECRET);
 
 
 app.set('port', process.env.PORT || 3000);
